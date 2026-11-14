@@ -57,23 +57,6 @@ GobangApp/
 
 `configure`、`core`、`gui` 和 `gui/components` 目录不含 `__init__.py`。Python 3.8 支持命名空间包；请从项目根目录运行程序。
 
-## 发布到 GitHub
-
-1. 在 GitHub 新建一个空仓库。
-2. 在项目根目录执行以下命令，并将仓库地址替换为自己的地址：
-
-   ```bash
-   git init
-   git add .
-   git commit -m "首次发布"
-   git branch -M main
-   git remote add origin https://github.com/<用户名>/<仓库名>.git
-   git push -u origin main
-   ```
-
-3. 发布前检查准备提交的文件，不要上传私人资料或密钥。
-4. 本项目尚未选择开源许可证；在允许他人复用或分发代码前，请先确定许可证。
-
 ## AI 说明
 
 AI 会优先寻找直接获胜的位置，其次尝试阻止对手立即获胜；其他情况下会在已有棋子附近进行限时搜索。搜索强度和响应时间会随棋局与电脑性能变化。AI 思考时会在启动程序的终端打印思考耗时和评估缓存命中次数。
